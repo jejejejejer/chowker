@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Menu – Chowking</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="menu.css" />
+</head>
+<body>
+
+  <header class="bg-danger text-white sticky-top shadow">
+    <nav class="navbar navbar-expand-lg navbar-dark container">
+      <a class="navbar-brand" href="homepage.html">
+        <img src="she.png" alt="Chowking Logo" height="50" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="homepage.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+          <li class="nav-item"><a class="nav-link" href="logout.html">Logout</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container py-5">
+    <h1 class="text-center text-danger mb-4">Our Bestsellers</h1>
+    <div class="row g-4">
+
+      <div class="col-md-4">
+        <div class="card menu-card" data-bs-toggle="modal" data-bs-target="#modalChaoFan">
+          <img src="https://www.chowkingusa.com/cdn/shop/files/CHAOFANWHITEBG600X480_002.png?v=1744933689" class="card-img-top" alt="Chao Fan" />
+          <div class="card-body text-center">
+            <h5 class="card-title">Chao Fan</h5>
+            <p class="small text-muted">Signature fried rice with beef, pork, and spring onions.</p>
+            <p class="card-text">₱65</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card menu-card" data-bs-toggle="modal" data-bs-target="#modalSiomai">
+          <img src="https://www.chowking.ph/wp-content/uploads/2023/09/4pcs-Siomai-650-x-547px.png" class="card-img-top" alt="Siomai" />
+          <div class="card-body text-center">
+            <h5 class="card-title">Siomai</h5>
+            <p class="small text-muted">Juicy pork dumplings packed with umami flavor.</p>
+            <p class="card-text">₱45</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card menu-card" data-bs-toggle="modal" data-bs-target="#modalLauriat">
+          <img src="https://www.chowking.ph/wp-content/uploads/2023/09/Chinese-Style-Fried-Chicken-Lauriat-850x715-1.png" class="card-img-top" alt="Lauriat" />
+          <div class="card-body text-center">
+            <h5 class="card-title">Lauriat</h5>
+            <p class="small text-muted">Chicken, pancit, siomai, rice, drink & dessert combo.</p>
+            <p class="card-text">₱99</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card menu-card" data-bs-toggle="modal" data-bs-target="#modalHaloHalo">
+          <img src="https://www.chowkingusa.com/cdn/shop/products/ea05dd3421f6413bb2ab4296d5831678.jpg?v=1631130861" class="card-img-top" alt="Halo-Halo" />
+          <div class="card-body text-center">
+            <h5 class="card-title">Halo-Halo</h5>
+            <p class="small text-muted">Cool shaved ice with leche flan, ube, and sago pearls.</p>
+            <p class="card-text">₱55</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card menu-card" data-bs-toggle="modal" data-bs-target="#modalWonton">
+          <img src="https://www.chowking.ph/wp-content/uploads/2023/09/Beef-Wonton-Mami320x283.png" class="card-img-top" alt="Beef Wonton" />
+          <div class="card-body text-center">
+            <h5 class="card-title">Beef Wonton</h5>
+            <p class="small text-muted">Hot soup with beef slices and stuffed wontons.</p>
+            <p class="card-text">₱89</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card menu-card" data-bs-toggle="modal" data-bs-target="#modalBuchi">
+          <img src="https://www.chowkingusa.com/cdn/shop/files/buchi1200x800_grande.png?v=1716335436" class="card-img-top" alt="Buchi" />
+          <div class="card-body text-center">
+            <h5 class="card-title">Buchi</h5>
+            <p class="small text-muted">Golden crispy rice balls filled with mongo paste.</p>
+            <p class="card-text">₱39</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="bg-dark text-white text-center py-4 mt-5">
+    <div class="mb-2">
+      <a href="homepage.html" class="text-white text-decoration-none me-3">Home</a>
+      <a href="about.html" class="text-white text-decoration-none me-3">About</a>
+      <a href="menu.html" class="text-white text-decoration-none me-3">Menu</a>
+      <a href="logout.html" class="text-white text-decoration-none">Logout</a>
+    </div>
+    <p class="mb-0">&copy; 2025 Chowking. Chinese‑Style Sarap!</p>
+    <p class="small">THIS IS NOT REAL, FAKE WEBSITE</p>
+  </footer>
+
+  <div class="modal fade" id="modalChaoFan" tabindex="-1"><div class="modal-dialog"><div class="modal-content text-center p-3">
+    <img src="https://www.chowkingusa.com/cdn/shop/files/CHAOFANWHITEBG600X480_002.png?v=1744933689" class="img-fluid mb-3" />
+    <h5 class="fw-bold">Chao Fan</h5>
+    <p>Signature fried rice with beef, pork, and spring onions.</p>
+    <p class="price">₱65</p>
+    <button class="btn btn-warning">Pay Now</button>
+  </div></div></div>
+
+  <div class="modal fade" id="modalSiomai" tabindex="-1"><div class="modal-dialog"><div class="modal-content text-center p-3">
+    <img src="https://www.chowking.ph/wp-content/uploads/2023/09/4pcs-Siomai-650-x-547px.png" class="img-fluid mb-3" />
+    <h5 class="fw-bold">Siomai</h5>
+    <p>Juicy pork dumplings packed with umami flavor.</p>
+    <p class="price">₱45</p>
+    <button class="btn btn-warning">Pay Now</button>
+  </div></div></div>
+
+  <div class="modal fade" id="modalLauriat" tabindex="-1"><div class="modal-dialog"><div class="modal-content text-center p-3">
+    <img src="https://www.chowking.ph/wp-content/uploads/2023/09/Chinese-Style-Fried-Chicken-Lauriat-850x715-1.png" class="img-fluid mb-3" />
+    <h5 class="fw-bold">Lauriat</h5>
+    <p>Chicken, pancit, siomai, rice, drink & dessert combo.</p>
+    <p class="price">₱99</p>
+    <button class="btn btn-warning">Pay Now</button>
+  </div></div></div>
+
+  <div class="modal fade" id="modalHaloHalo" tabindex="-1"><div class="modal-dialog"><div class="modal-content text-center p-3">
+    <img src="https://www.chowkingusa.com/cdn/shop/products/ea05dd3421f6413bb2ab4296d5831678.jpg?v=1631130861" class="img-fluid mb-3" />
+    <h5 class="fw-bold">Halo-Halo</h5>
+    <p>Cool shaved ice with leche flan, ube, and sago pearls.</p>
+    <p class="price">₱55</p>
+    <button class="btn btn-warning">Pay Now</button>
+  </div></div></div>
+
+  <div class="modal fade" id="modalWonton" tabindex="-1"><div class="modal-dialog"><div class="modal-content text-center p-3">
+    <img src="https://www.chowking.ph/wp-content/uploads/2023/09/Beef-Wonton-Mami320x283.png" class="img-fluid mb-3" />
+    <h5 class="fw-bold">Beef Wonton</h5>
+    <p>Hot soup with beef slices and stuffed wontons.</p>
+    <p class="price">₱89</p>
+    <button class="btn btn-warning">Pay Now</button>
+  </div></div></div>
+
+  <div class="modal fade" id="modalBuchi" tabindex="-1"><div class="modal-dialog"><div class="modal-content text-center p-3">
+    <img src="https://www.chowkingusa.com/cdn/shop/files/buchi1200x800_grande.png?v=1716335436" class="img-fluid mb-3" />
+    <h5 class="fw-bold">Buchi</h5>
+    <p>Golden crispy rice balls filled with mongo paste.</p>
+    <p class="price">₱39</p>
+    <button class="btn btn-warning">Pay Now</button>
+  </div></div></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
